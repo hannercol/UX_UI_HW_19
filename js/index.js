@@ -11,12 +11,10 @@ const texts = [
 
 $(document).ready(function() {
     let currentIndex = 0;
-    const changeInterval = 3000; // 3000 milliseconds = 3 seconds
+    const changeInterval = 2500;
 
     function updateText() {
-        // Update the variable text
         $('#variableText').text(texts[currentIndex].text);
-        // Update its possessive pronoun
         $('#variablePossessive').text(texts[currentIndex].possessive);
 
         // Move to the next text for the next cycle
