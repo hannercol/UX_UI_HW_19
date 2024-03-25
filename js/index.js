@@ -1,11 +1,23 @@
 console.log("Your index.js file is loaded correctly!");
 
-const texts = [
-    { text: "bootstrapped startup", possessive: "its" },
-    { text: "global manufacturer", possessive: "its" },
-    { text: "nonprofit", possessive: "their" },
+$('.nav-item').on('click', function() {
+    // Update the 'selected' class for nav items
+    $('.nav-item').removeClass('selected');
+    $(this).addClass('selected');
 
-    { text: "brand", possessive: "their" },
+    // Update the underline position and display it
+    $('.nav-underline').css({
+      'width': $(this).outerWidth(),
+      'left': $(this).position().left,
+      'display': 'block'
+    });
+  });
+
+
+const texts = [
+    { text: "startup", possessive: "its" },
+    { text: "manufacturer", possessive: "its" },
+    { text: "nonprofit", possessive: "its" },
     { text: "person", possessive: "their"}
 ];
 
@@ -25,6 +37,7 @@ $(document).ready(function() {
         }
     }
 
+    
     // Initialize the text update when the page loads
     updateText();
     // Set the text to update at regular intervals
@@ -32,3 +45,12 @@ $(document).ready(function() {
 
     console.log('The text cycling script with possessive pronouns has been initialized!');
 });
+
+$(document).ready(function() {
+    $('.down-arrow').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $('#next-section').offset().top
+      }, 1000);
+    });
+  });
+  

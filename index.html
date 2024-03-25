@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Homework 17 Solved</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colin Hanner Creative</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-      <img src="images/logo.png">
-      <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
-      </ul>
+        <!-- Header logo area -->
+        <section class="headerLogo">
+            <h1>Colin Hanner</h1>
+            <h1>Creative</h1>
+        </section>
+        <!-- Navigation area -->
+        <nav>
+            <ul>
+                <li><a href="#work" class="nav-item">WORK</a></li>
+                <li><a href="#about" class="nav-item">ABOUT</a></li>
+                <li><a href="#contact" class="nav-item">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- Underline for selected nav item -->
+        <div class="nav-underline"></div>
     </header>
+    <!-- Main hero image and text area -->
     <section class="heroImg">
+      <video autoplay loop muted class="hero-video">
+        <source src="images/pexels_videos_2431225 (2160p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <div class="content">
-        <img src="images/placeholder_picture.png">
-        <h1 id="animatedText">Every <span id="variableText">_____</span> has <span id="variablePossessive"></span> story. What's yours?</h1>
+        <h1 id="animatedText">Every <span id="variableText">startup</span> has <span id="variablePossessive">its</span> story.</h1>
+        <h1>What’s yours?</h1>
       </div>
-    </section>
+      <div class="findyourStory"> 
+          <h1>See how we can help tell your story.</h1>
+          <img src="images/noun-arrow-down-2424963.png" class="down-arrow">
+        </div>
+    </section>   
+  </section>
+
+    <section id="next-section">
     <h1 class="heading">My UX Skills</h1>
     <section class="flexContainer">
       <div>
@@ -38,7 +62,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat</p>
       </div>
     </section>
-
+  </section>
     <section class="myWork">
       <h1 class="heading">My Work</h1>
       <div class="workGrid">
@@ -70,19 +94,14 @@
     </section>
     <footer>
       <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+          <li><a href="#work" class="nav-item">WORK</a></li>
+          <li><a href="#about" class="nav-item">ABOUT</a></li>
+          <li><a href="#contact" class="nav-item">CONTACT</a></li>
       </ul>
-    </footer>
+  </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="js/index.js"></script>
   </body>
-
-  
-
-
 </html>
