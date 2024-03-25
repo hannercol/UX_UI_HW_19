@@ -1,32 +1,75 @@
-body {
+/* Main styles */
+body, h1, ul, li, a {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 header {
-  background-color: #373738;
-  padding: 15px;
+  background-color: #D33F49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
 }
-header ul {
-  float: right;
+
+.headerLogo h1 {
   color: white;
+  font-size: 35px;
 }
-header li {
-  display: inline-block;
-  padding: 0px 5px;
+
+nav ul {
+  display: flex;
+  list-style: none;
 }
-header p {
-  display: inline-block;
+
+nav li {
+  margin-right: 20px;
 }
+
+nav a.nav-item {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-size: 25px;
+}
+
+.nav-item:hover,
+.nav-item.selected {
+  color: #34495E;
+}
+
+.nav-underline {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: #34495E;
+  width: 0;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* ... Your other styles for content, footer, etc. ... */
+
+
+/* Main content area styles */
 .heroImg {
   background-color: #EBEBEB;
   padding: 100px 15px;
 }
+
 .content {
   max-width: 300px;
   margin: 0 auto;
   padding: 50px;
   background-color: #FFFFFF;
   text-align: center;
+  font-size: 35px;
 }
+
+/* Button styles */
 button {
   padding: 15px;
   background-color: #373738;
@@ -34,74 +77,91 @@ button {
   font-size: 15px;
   border-radius: 4px;
 }
+
+/* Footer styles */
 footer {
   background-color: #373738;
   padding: 5px;
   color: white;
 }
+
 footer ul {
   list-style: none;
   padding-left: 5px;
 }
+
 footer li {
   display: inline-block;
   padding: 0px 7px;
 }
+
+/* Section heading styles */
 .heading {
   text-align: center;
   padding: 15px 5px;
   font-size: 30px;
 }
-/* My UX Skills Section */
+
+/* Styles for the "My UX Skills" section */
 .flexContainer {
   display: flex;
   padding: 60px 30px;
 }
+
 .flexContainer div {
   width: 33%;
   padding: 25px;
 }
 
-/* My Work Section */
+/* Styles for the "My Work" section */
 .myWork {
   padding: 60px 30px;
   padding-top: 0;
   background-color: #EBEBEB;
 }
+
 .workGrid {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 350px 350px 350px;
   grid-template-areas:
-  "img1 content1"
-  "img2 content2"
-  "img3 content3"
-  ;
+    "img1 content1"
+    "img2 content2"
+    "img3 content3";
 }
+
 .workGrid img {
   width: 100%;
   max-width: 250px;
   margin: 0 auto;
   display: block;
 }
+
 .img1 {
   grid-area: img1;
 }
+
 .img2 {
   grid-area: img2;
 }
+
 .img3 {
   grid-area: img3;
 }
+
 .img1, .img2, .img3, .content1, .content2, .content3 {
   padding: 80px;
 }
+
 .content1 {
   grid-area: content1;
 }
+
 .content2 {
   grid-area: content2;
 }
+
 .content3 {
   grid-area: content3;
 }
+
